@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    font-family: sans-serif;
+}
+
+/*ul felx box */
+nav ul{
+    display: flex; /*makes all the items horizontla*/
+    align-items: center;
+    list-style-type:none;
+    height:65px;
+    background-color: black;
+    color: white; /*for spotify brand class*/
+}
+
+
+/*to create space separation between the written components*/
+nav ul li{
+    padding: 0 12px;
+}
+
+
+/*image alterations*/
+.brand img{
+    width:44px;
+    padding: 0 8px; /*use padding to create separation*/
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.container{
+    min-height: 60vh; /*so that the bottom class actually moves down*/
+    background-color: black;
+    color: white;
+    font-family: sans-serif ;
+    display: flex;
+    width:70%;
+    margin:23px auto; /*so that it comes in center*/
+    border-radius: 12px;
+    padding:34px;
+    background-image: url('bg.jpg');
+}
+
+/*to bring the bottom class down*/
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color:white; /*to make the contents in the black box white*/
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*brings the components below the progressbar*/
+
+}
+
+.icons{
+    margin-top: 14px; /*cretaes spacing for icons*/
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width:80vw;
+    
+
+}
